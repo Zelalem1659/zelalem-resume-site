@@ -1,0 +1,17 @@
+{
+  "name": "zelalem-resume-site",
+  "version": "1.0.0",
+  "description": "Personal resume website built with Vite, HTML, CSS, and JavaScript — showcasing cybersecurity skills, education, and portfolio projects. Hosted on Vercel with a modern gold-and-navy theme.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
