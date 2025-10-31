@@ -49,8 +49,7 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      entry.target.classList.add('visible');
     }
   });
 }, observerOptions);
@@ -62,9 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   
   animatedElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.classList.add('fade-in');
     observer.observe(el);
   });
 });
@@ -110,16 +107,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// Add hover effect to skill cards
-document.querySelectorAll('.skill-card').forEach(card => {
-  card.addEventListener('mouseenter', function() {
-    this.style.transform = 'translateY(-10px) scale(1.02)';
-  });
-  
-  card.addEventListener('mouseleave', function() {
-    this.style.transform = 'translateY(0) scale(1)';
-  });
-});
+
 
 // Console easter egg
 console.log('%c👋 Hello there!', 'color: #d4af37; font-size: 20px; font-weight: bold;');
