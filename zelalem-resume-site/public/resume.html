@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelalem Tewelde - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .header .title {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info span {
+            color: #475569;
+            font-size: 0.9rem;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            color: #1e40af;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+            gap: 20px;
+        }
+        
+        .item-header h3 {
+            color: #334155;
+            font-size: 1.1rem;
+        }
+        
+        .date {
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .company, .school {
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .gpa {
+            color: #1d4ed8;
+            font-weight: 600;
+        }
+        
+        .details {
+            color: #475569;
+            margin-left: 20px;
+        }
+        
+        .details li {
+            margin-bottom: 5px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .achievement {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .achievement h3 {
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .achievement p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .header {
+                margin-bottom: 30px;
+            }
+            
+            .section {
+                margin-bottom: 25px;
+            }
+            
+            .achievement {
+                break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Zelalem Tewelde</h1>
+        <div class="title">Computer Science Student & Software Developer</div>
+        <div class="contact-info">
+            <span>📧 zelalem.tewelde@email.com</span>
+            <span>📱 (555) 123-4567</span>
+            <span>💼 linkedin.com/in/zelalem-tewelde</span>
+            <span>🔗 github.com/Zelalem1659</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Software Development Intern</h3>
+                <span class="date">Summer 2024</span>
+            </div>
+            <div class="company">Tech Solutions Inc.</div>
+            <ul class="details">
+                <li>Developed full-stack web applications using React and Node.js</li>
+                <li>Implemented security protocols and data encryption methods</li>
+                <li>Collaborated with senior developers on enterprise-level projects</li>
+                <li>Improved application performance by 25% through code optimization</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Research Assistant</h3>
+                <span class="date">2023-2024</span>
+            </div>
+            <div class="company">University Computer Science Department</div>
+            <ul class="details">
+                <li>Conducted research on cybersecurity algorithms and implementations</li>
+                <li>Assisted in publishing papers on secure computing methodologies</li>
+                <li>Mentored undergraduate students in programming fundamentals</li>
+                <li>Developed automated testing frameworks for security protocols</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Freelance Web Developer</h3>
+                <span class="date">2022-Present</span>
+            </div>
+            <div class="company">Independent Contractor</div>
+            <ul class="details">
+                <li>Built responsive websites for local businesses and startups</li>
+                <li>Specialized in modern JavaScript frameworks and database design</li>
+                <li>Maintained 95% client satisfaction with on-time project delivery</li>
+                <li>Generated $15K+ revenue through quality web development services</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        
+        <div class="education-item">
+            <div class="item-header">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="date">Expected 2025</span>
+            </div>
+            <div class="school">University Name</div>
+            <div class="gpa">GPA: 3.8/4.0</div>
+            <div class="details">
+                <p>Concentration in Cybersecurity and Software Engineering</p>
+                <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Systems Programming, Database Management, Network Security, Software Engineering, Web Development</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">VS Code</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Cybersecurity</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Network Security</span>
+                    <span class="skill-tag">Penetration Testing</span>
+                    <span class="skill-tag">Encryption</span>
+                    <span class="skill-tag">Security Auditing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Achievements & Certifications</h2>
+        
+        <div class="achievements">
+            <div class="achievement">
+                <h3>🥇 Dean's List</h3>
+                <p>Fall 2023, Spring 2024</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>💡 Hackathon Winner</h3>
+                <p>Best Security Solution - Regional Tech Challenge 2024</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>🎯 Student Leadership Award</h3>
+                <p>Computer Science Department Recognition</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>🔐 CompTIA Security+</h3>
+                <p>Certified Security Professional</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>☁️ AWS Cloud Practitioner</h3>
+                <p>Amazon Web Services Certification</p>
+            </div>
+            
+            <div class="achievement">
+                <h3>🐍 Python Developer</h3>
+                <p>Advanced Python Programming Certificate</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Secure Chat Application</h3>
+                <span class="date">2024</span>
+            </div>
+            <ul class="details">
+                <li>Built end-to-end encrypted messaging app using React and Node.js</li>
+                <li>Implemented AES-256 encryption for message security</li>
+                <li>Deployed on AWS with auto-scaling and load balancing</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Portfolio Website</h3>
+                <span class="date">2024</span>
+            </div>
+            <ul class="details">
+                <li>Designed modern glassmorphism portfolio with Vite and vanilla JavaScript</li>
+                <li>Implemented responsive design with smooth animations</li>
+                <li>Integrated downloadable resume functionality</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <h3>Network Security Scanner</h3>
+                <span class="date">2023</span>
+            </div>
+            <ul class="details">
+                <li>Developed Python-based network vulnerability scanner</li>
+                <li>Automated security auditing for small business networks</li>
+                <li>Generated comprehensive security reports with recommendations</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+/* ===== Glassmorphism Portfolio Design ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== Global Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ===== Glassmorphism Card Base ===== */
+.glass-card {
+  background: rgba(248, 250, 252, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(248, 250, 252, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.glass-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  background: rgba(248, 250, 252, 0.15);
+  box-shadow: 0 12px 48px rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* ===== Fixed Glass Navbar ===== */
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(248, 250, 252, 0.1);
+  padding: 1rem 0;
+}
+
+.glass-navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.glass-navbar a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.glass-navbar a:hover {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero-card {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.6);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #f8fafc, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #1e3a8a, #3730a3);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.5);
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #f8fafc, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.section-title.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Skills Section ===== */
+.skills-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.skill-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* ===== Certificates Section ===== */
+.certificates-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.certificate-card {
+  text-align: center;
+}
+
+.cert-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.certificate-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.cert-status {
+  color: #38bdf8;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.cert-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* ===== Projects Section ===== */
+.projects-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  text-align: left;
+}
+
+.project-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.project-type {
+  color: #38bdf8;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  padding: 6rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.contact-details h3 {
+  color: #f8fafc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #0ea5e9;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.contact-cta {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(248, 250, 252, 0.1);
+}
+
+.contact-cta p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
+  }
+}
+
+.cta-button {
+  animation: pulse 3s infinite;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .glass-navbar ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  
+  .glass-navbar a {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .hero-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .skills-grid,
+  .certificates-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .glass-card {
+    padding: 1.5rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section,
+  .skills-section,
+  .certificates-section,
+  .projects-section,
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
