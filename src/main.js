@@ -1,8 +1,23 @@
 import './style.css'
 import ztLogo from '/zt-logo.svg'
 
-document.querySelector('#app').innerHTML = `
-  <div class="glassmorphism-portfolio">
+// Add loading state for better mobile experience
+const addLoadingState = () => {
+  document.querySelector('#app').innerHTML = `
+    <div class="loading-screen">
+      <div class="loading-spinner"></div>
+      <p>Loading Portfolio...</p>
+    </div>
+  `;
+};
+
+// Show loading initially
+addLoadingState();
+
+// Load main content after a brief delay
+setTimeout(() => {
+  document.querySelector('#app').innerHTML = `
+    <div class="glassmorphism-portfolio">
     <!-- Floating Geometric Elements -->
     <div class="floating-elements">
       <div class="floating-element circle"></div>
@@ -340,20 +355,45 @@ document.querySelector('.nav-logo').addEventListener('click', function() {
   });
 });
 
-// Add scroll animations
+// Add scroll animations with error handling
 const observeElements = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-      }
-    });
-  }, { threshold: 0.1 });
+  try {
+    // Check if IntersectionObserver is supported
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: Just add animate-in class to all elements
+      document.querySelectorAll('.glass-card, .section-title').forEach(el => {
+        el.classList.add('animate-in');
+      });
+      return;
+    }
 
-  document.querySelectorAll('.glass-card, .section-title').forEach(el => {
-    observer.observe(el);
-  });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, { 
+      threshold: 0.1,
+      rootMargin: '50px' // Better mobile performance
+    });
+
+    document.querySelectorAll('.glass-card, .section-title').forEach(el => {
+      observer.observe(el);
+    });
+  } catch (error) {
+    console.warn('Animation observer failed, using fallback:', error);
+    // Fallback: Just show all elements
+    document.querySelectorAll('.glass-card, .section-title').forEach(el => {
+      el.classList.add('animate-in');
+    });
+  }
 };
 
-// Initialize animations when DOM is loaded
-setTimeout(observeElements, 100);
+    // Initialize animations when DOM is loaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setTimeout(observeElements, 100));
+    } else {
+      setTimeout(observeElements, 100);
+    }
+}, 500); // Close the setTimeout properly
