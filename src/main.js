@@ -312,7 +312,7 @@ setTimeout(() => {
             <div class="contact-icon">📧</div>
             <div class="contact-details">
               <h3>Email</h3>
-              <a href="mailto:zelalem@example.com" class="contact-link">zelalem@example.com</a>
+              <a href="mailto:zolafruit@gmail.com" class="contact-link">zolafruit@gmail.com</a>
             </div>
           </div>
           
@@ -320,7 +320,7 @@ setTimeout(() => {
             <div class="contact-icon">🐱</div>
             <div class="contact-details">
               <h3>GitHub</h3>
-              <a href="https://github.com/zyt2b" target="_blank" class="contact-link">github.com/zyt2b</a>
+              <a href="https://github.com/Zelalem1659" target="_blank" class="contact-link">github.com/Zelalem1659</a>
             </div>
           </div>
         </div>
