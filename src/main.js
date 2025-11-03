@@ -210,11 +210,20 @@ setTimeout(() => {
             <div class="education-item">
               <div class="education-header">
                 <h4>Bachelor of Science in Computer Science</h4>
-                <span class="education-date">Expected 2025</span>
+                <span class="education-date">In Progress</span>
               </div>
-              <p class="education-school">University Name</p>
+              <p class="education-school">Middle Tennessee State University</p>
               <p class="education-gpa">GPA: 3.8/4.0</p>
-              <p class="education-details">Concentration in Cybersecurity and Software Engineering</p>
+              <p class="education-details">Concentration in Software Engineering and Information Systems</p>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <h4>Associate of Science</h4>
+                <span class="education-date">2022-2024</span>
+              </div>
+              <p class="education-school">Nashville Community College</p>
+              <p class="education-details">Foundation in Computer Science and Mathematics</p>
             </div>
 
             <div class="education-item">
@@ -317,7 +326,15 @@ setTimeout(() => {
           </div>
           
           <div class="contact-item">
-            <div class="contact-icon">🐱</div>
+            <div class="contact-icon">�</div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:+16293454682" class="contact-link">(629) 345-4682</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">�🐱</div>
             <div class="contact-details">
               <h3>GitHub</h3>
               <a href="https://github.com/Zelalem1659" target="_blank" class="contact-link">github.com/Zelalem1659</a>
