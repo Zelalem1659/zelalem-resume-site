@@ -48,6 +48,13 @@ setTimeout(() => {
           <img src="${ztLogo}" alt="ZT Logo" class="hero-logo" />
         </div>
         <h1 class="hero-title">Zelalem Tewelde</h1>
+        <div class="profile-photo-wrap">
+          <img src="/profile.jpg" alt="Zelalem Tewelde" class="profile-photo" />
+        </div>
+        <p class="hero-about">
+          Cybersecurity-focused computer science student who builds secure, reliable software and enjoys hands-on labs in
+          virtualization, system hardening, and data-driven problem solving.
+        </p>
         <p class="hero-tagline">Building secure, elegant software.</p>
         <div class="hero-buttons">
           <button class="cta-button" onclick="document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})">
@@ -108,25 +115,32 @@ setTimeout(() => {
           <p class="cert-description">Cybersecurity fundamentals and best practices</p>
         </div>
         
+                <div class="glass-card certificate-card">
+          <div class="cert-icon">�</div>
+          <h3>Virtual Machine Security Project</h3>
+          <p class="cert-status">Academic</p>
+          <p class="cert-description">Ubuntu VM setup with secure configuration and user privilege management</p>
+        </div>
+        
+        <div class="glass-card certificate-card">
+          <div class="cert-icon">🖥️</div>
+          <h3>Operating System Virtualization Lab</h3>
+          <p class="cert-status">Academic</p>
+          <p class="cert-description">CentOS, Kali Linux, and Ubuntu VM installation and secure setup</p>
+        </div>
+        
         <div class="glass-card certificate-card">
           <div class="cert-icon">💻</div>
-          <h3>Systems Programming</h3>
-          <p class="cert-status">CSCI 3240</p>
-          <p class="cert-description">Low-level programming and system optimization</p>
+          <h3>Client-Server Application (C)</h3>
+          <p class="cert-status">Academic</p>
+          <p class="cert-description">TCP client-server model for employee data management with CSV integration</p>
         </div>
         
         <div class="glass-card certificate-card">
-          <div class="cert-icon">🧠</div>
-          <h3>Ethics & Computing Technology</h3>
-          <p class="cert-status">PHIL 3170</p>
-          <p class="cert-description">Ethical considerations in technology development</p>
-        </div>
-        
-        <div class="glass-card certificate-card">
-          <div class="cert-icon">🌐</div>
-          <h3>Linux Environment Management</h3>
-          <p class="cert-status">Certified</p>
-          <p class="cert-description">System administration and server management</p>
+          <div class="cert-icon">🗄️</div>
+          <h3>Database Management System</h3>
+          <p class="cert-status">Academic</p>
+          <p class="cert-description">MySQL relational database with Python integration and visualization</p>
         </div>
       </div>
     </section>
@@ -164,40 +178,40 @@ setTimeout(() => {
             
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Software Development Intern</h4>
-                <span class="experience-date">Summer 2024</span>
+                <h4>Driver</h4>
+                <span class="experience-date">2018–Present</span>
               </div>
-              <p class="experience-company">Tech Solutions Inc.</p>
+              <p class="experience-company">Uber Technologies Inc. – Nashville, TN</p>
               <ul class="experience-details">
-                <li>Developed full-stack web applications using React and Node.js</li>
-                <li>Implemented security protocols and data encryption methods</li>
-                <li>Collaborated with senior developers on enterprise-level projects</li>
+                <li>Completed 25,000+ rides with a 4.98-star rating, demonstrating reliability and professionalism</li>
+                <li>Maintained a 100% clean driving record</li>
+                <li>Provided exceptional customer service in fast-paced environment</li>
               </ul>
             </div>
 
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Research Assistant</h4>
-                <span class="experience-date">2023-2024</span>
+                <h4>Manager</h4>
+                <span class="experience-date">2017–2018</span>
               </div>
-              <p class="experience-company">University Computer Science Department</p>
+              <p class="experience-company">Quency Liquor Store – Washington, DC</p>
               <ul class="experience-details">
-                <li>Conducted research on cybersecurity algorithms and implementations</li>
-                <li>Assisted in publishing papers on secure computing methodologies</li>
-                <li>Mentored undergraduate students in programming fundamentals</li>
+                <li>Supervised staff hiring, training, and performance evaluations</li>
+                <li>Oversaw daily operations and customer service</li>
+                <li>Managed inventory and financial operations</li>
               </ul>
             </div>
 
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Freelance Web Developer</h4>
-                <span class="experience-date">2022-Present</span>
+                <h4>Legal Counsel Department Manager</h4>
+                <span class="experience-date">2013–2016</span>
               </div>
-              <p class="experience-company">Independent Contractor</p>
+              <p class="experience-company">Afro-Tsion Construction – Addis Ababa, Ethiopia</p>
               <ul class="experience-details">
-                <li>Built responsive websites for local businesses and startups</li>
-                <li>Specialized in modern JavaScript frameworks and database design</li>
-                <li>Maintained 95% client satisfaction with on-time project delivery</li>
+                <li>Managed all legal affairs for a leading construction firm</li>
+                <li>Advised management on compliance and contracts</li>
+                <li>Provided risk management and legal consultation</li>
               </ul>
             </div>
           </div>
@@ -209,21 +223,30 @@ setTimeout(() => {
             
             <div class="education-item">
               <div class="education-header">
-                <h4>Bachelor of Science in Computer Science</h4>
-                <span class="education-date">In Progress</span>
+                <h4>B.S. Computer Science, Cybersecurity Concentration</h4>
+                <span class="education-date">2024–Present</span>
               </div>
-              <p class="education-school">Middle Tennessee State University</p>
-              <p class="education-gpa">GPA: 3.8/4.0</p>
-              <p class="education-details">Concentration in Software Engineering and Information Systems</p>
+              <p class="education-school">Middle Tennessee State University – Murfreesboro, TN</p>
+              <p class="education-gpa">GPA: 3.83/4.0</p>
+              <p class="education-details">Cybersecurity concentration with focus on system security and digital forensics</p>
             </div>
 
             <div class="education-item">
               <div class="education-header">
-                <h4>Associate of Science</h4>
-                <span class="education-date">2022-2024</span>
+                <h4>Associate of Science, Computer Science</h4>
+                <span class="education-date">2024</span>
               </div>
-              <p class="education-school">Nashville Community College</p>
-              <p class="education-details">Foundation in Computer Science and Mathematics</p>
+              <p class="education-school">Nashville State Community College – Nashville, TN</p>
+              <p class="education-details">Foundation in programming, mathematics, and computer science fundamentals</p>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <h4>LL.M., Environmental & Water Law</h4>
+                <span class="education-date">2013</span>
+              </div>
+              <p class="education-school">Gondar University – Gondar, Ethiopia</p>
+              <p class="education-details">Advanced legal studies with environmental law specialization</p>
             </div>
 
             <div class="education-item">
