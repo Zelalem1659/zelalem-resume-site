@@ -101,6 +101,26 @@ setTimeout(() => {
           <h3>Cybersecurity</h3>
           <p>Security analysis, threat assessment, and protection</p>
         </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Full-Stack Development</h3>
+          <p>End-to-end application development across frontend and backend</p>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🧩</div>
+          <h3>Frontend Development</h3>
+          <p>Responsive interfaces, UI components, and client-side behavior</p>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Backend Development</h3>
+          <p>APIs, business logic, and server-side application support</p>
+        </div>
+        <div class="glass-card skill-card">
+          <div class="skill-icon">📡</div>
+          <h3>Networking</h3>
+          <p>TCP/IP, DNS, DHCP, VPN, LAN/WAN, and network troubleshooting</p>
+        </div>
       </div>
     </section>
 
@@ -113,6 +133,20 @@ setTimeout(() => {
           <h3>CompTIA Security+</h3>
           <p class="cert-status">In Progress</p>
           <p class="cert-description">Cybersecurity fundamentals and best practices</p>
+        </div>
+
+        <div class="glass-card certificate-card">
+          <div class="cert-icon">🤖</div>
+          <h3>AI Fluency</h3>
+          <p class="cert-status">Certificate</p>
+          <p class="cert-description">Applied AI skills and responsible use of generative tools</p>
+        </div>
+
+        <div class="glass-card certificate-card">
+          <div class="cert-icon">📘</div>
+          <h3>Claude 101</h3>
+          <p class="cert-status">Certificate</p>
+          <p class="cert-description">Foundational training in Claude and AI-assisted workflows</p>
         </div>
         
                 <div class="glass-card certificate-card">
@@ -178,40 +212,78 @@ setTimeout(() => {
             
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Driver</h4>
-                <span class="experience-date">2018–Present</span>
+                <h4>POS Implementation Analyst</h4>
+                <span class="experience-date">Jul 2026 – Present</span>
               </div>
-              <p class="experience-company">Uber Technologies Inc. – Nashville, TN</p>
+              <p class="experience-company">ConStrata</p>
               <ul class="experience-details">
-                <li>Completed 25,000+ rides with a 4.98-star rating, demonstrating reliability and professionalism</li>
-                <li>Maintained a 100% clean driving record</li>
-                <li>Provided exceptional customer service in fast-paced environment</li>
+                <li>Install, configure, validate, and troubleshoot enterprise POS systems and connected hardware in customer environments.</li>
+                <li>Provide go-live support, document implementation and troubleshooting activities, and collaborate with customers and project teams.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <div class="experience-header">
+                <h4>Database Administrator</h4>
+                <span class="experience-date">Jun 2016 – Nov 2017</span>
+              </div>
+              <p class="experience-company">Benning Market LLC</p>
+              <ul class="experience-details">
+                <li>Administered SQL databases, backups, recovery procedures, user permissions, access controls, performance monitoring, and reporting.</li>
+                <li>Documented configurations and operational processes and provided technical support for database-related issues.</li>
               </ul>
             </div>
 
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Manager</h4>
-                <span class="experience-date">2017–2018</span>
+                <h4>IT Support Technician</h4>
+                <span class="experience-date">Jul 2021 – May 2024</span>
               </div>
-              <p class="experience-company">Quency Liquor Store – Washington, DC</p>
+              <p class="experience-company">VSF Germany</p>
               <ul class="experience-details">
-                <li>Supervised staff hiring, training, and performance evaluations</li>
-                <li>Oversaw daily operations and customer service</li>
-                <li>Managed inventory and financial operations</li>
+                <li>Delivered Tier 1/2 technical support for Windows workstations, printers, peripherals, user accounts, and network connectivity.</li>
+                <li>Investigated and resolved hardware, software, access, and network issues while documenting technical solutions.</li>
+                <li>Supported users and day-to-day IT operations with a focus on timely troubleshooting and clear communication.</li>
               </ul>
             </div>
 
             <div class="experience-item">
               <div class="experience-header">
-                <h4>Legal Counsel Department Manager</h4>
-                <span class="experience-date">2013–2016</span>
+                <h4>Junior SOC Analyst</h4>
+                <span class="experience-date">Jan 2019 – Jun 2021</span>
               </div>
-              <p class="experience-company">Afro-Tsion Construction – Addis Ababa, Ethiopia</p>
+              <p class="experience-company">Vi-John</p>
               <ul class="experience-details">
-                <li>Managed all legal affairs for a leading construction firm</li>
-                <li>Advised management on compliance and contracts</li>
-                <li>Provided risk management and legal consultation</li>
+                <li>Monitored SIEM alerts and investigated potential security incidents and suspicious activity in the environment.</li>
+                <li>Performed log analysis, vulnerability assessments, endpoint security monitoring, and incident-response support.</li>
+                <li>Analyzed security events, documented investigation findings and technical details, and maintained security documentation.</li>
+                <li>Supported incident triage and escalation when events required additional investigation or response.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <h4>System Administrator</h4>
+                <span class="experience-date">Jul 2015 – May 2016</span>
+              </div>
+              <p class="experience-company">ATC Construction</p>
+              <ul class="experience-details">
+                <li>Administered Windows Server and Active Directory environments, including user accounts, groups, permissions, patches, and system updates.</li>
+                <li>Configured and supported DNS, DHCP, TCP/IP, file sharing, network printing, backups, and Windows endpoints.</li>
+                <li>Monitored system performance, resolved hardware/software/network issues, and documented configurations and troubleshooting procedures.</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <h4>Network Administrator</h4>
+                <span class="experience-date">Sep 2013 – Jul 2015</span>
+              </div>
+              <p class="experience-company">ATC Construction</p>
+              <ul class="experience-details">
+                <li>Installed, configured, and maintained LAN/WAN infrastructure, routers, switches, wireless access points, firewalls, and network-connected systems.</li>
+                <li>Administered DNS, DHCP, TCP/IP, IP addressing, and connectivity; monitored network performance and troubleshot outages and reliability issues.</li>
+                <li>Supported network security controls, antivirus protection, user access, system updates, and Tier 1/2 technical support.</li>
+                <li>Maintained network documentation, asset inventory, IP address records, and technical procedures.</li>
               </ul>
             </div>
           </div>
@@ -274,18 +346,18 @@ setTimeout(() => {
             </div>
 
             <div class="achievement-item">
-              <div class="achievement-icon">💡</div>
+              <div class="achievement-icon">📚</div>
               <div>
-                <h4>Hackathon Winner</h4>
-                <p>Best Security Solution - Regional Tech Challenge 2024</p>
+                <h4>President's List</h4>
+                <p>Fall 2024, Spring 2025</p>
               </div>
             </div>
 
             <div class="achievement-item">
-              <div class="achievement-icon">🎯</div>
+              <div class="achievement-icon">🎓</div>
               <div>
-                <h4>Student Leadership Award</h4>
-                <p>Computer Science Department Recognition</p>
+                <h4>Gamma Beta Pi Honor Society</h4>
+                <p>Academic recognition for excellence and achievement</p>
               </div>
             </div>
           </div>
@@ -344,7 +416,7 @@ setTimeout(() => {
             <div class="contact-icon">📧</div>
             <div class="contact-details">
               <h3>Email</h3>
-              <a href="mailto:zolafruit@gmail.com" class="contact-link">zolafruit@gmail.com</a>
+              <a href="mailto:zelalemt1986@gmail.com" class="contact-link">zelalemt1986@gmail.com</a>
             </div>
           </div>
           
